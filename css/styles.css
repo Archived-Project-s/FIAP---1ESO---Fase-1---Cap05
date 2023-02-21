@@ -1,0 +1,100 @@
+.navbarA{
+    display: flex;
+    justify-content: end;
+    background-color: #1b8e99;
+    height: 50px;
+    width: 100%;
+    overflow: auto;
+}
+.navbarB{
+    background-color: #660000;
+    height: 50px;
+    width: 100%;
+    overflow: auto;
+}
+
+.navbarA a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.navbarB a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+.navbarA a:hover {
+    background-color: black;
+}
+
+.navbarB a:hover {
+    background-color: #92c9ce;
+}
+  
+.activeA {
+    height: 50px;
+    background-color: #92c9ce;
+  }
+
+.activeB {
+    background-color: White;
+  }
+  
+.banner{
+    width: 100%;
+}
+.img-logo{
+    margin-left: 20px;
+    border: 1px #1b8e99;
+}
+.DroneCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cardsServico{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cardDroneA{
+    display: flex;
+    flex-direction: column;
+    border: 1px #1b8e99;
+}
+
+.DescriptionDroneA{
+    background-color: #1b8e99;
+}
+
+.cardDroneB{
+    display: flex;
+    flex-direction: column;
+    border: 1px #660000;
+}
+
+.DescriptionDroneB{
+    background-color: #660000;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #1b8e99;
+}
+
+.footer-down{
+    height: 20px;
+    width: 100%;
+    background-color: #660000;
+}
