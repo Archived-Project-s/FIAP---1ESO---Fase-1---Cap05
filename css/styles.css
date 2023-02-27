@@ -1,16 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
 .navbarA{
     display: flex;
     justify-content: end;
+    align-items: center;
     background-color: #1b8e99;
-    height: 50px;
+    height: 45px;
     width: 100%;
-    overflow: auto;
+    margin-top: 16px;
+    position: relative;
 }
 .navbarB{
+    display: flex;
+    align-items: center;
     background-color: #660000;
-    height: 50px;
+    height: 45px;
     width: 100%;
-    overflow: auto;
 }
 
 .navbarA a {
@@ -18,7 +33,10 @@
     padding: 12px;
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 12px;
+    height: 45px;
+    display: flex;
+    align-items: center;
   }
 
 .navbarB a {
@@ -26,7 +44,10 @@
     padding: 12px;
     color: white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 12px;
+    height: 45px;
+    display: flex;
+    align-items: center;
   }
 
 .navbarA a:hover {
@@ -38,21 +59,56 @@
 }
   
 .activeA {
-    height: 50px;
+    height: 55px !important; 
+    display: flex;
+    align-items: center;
     background-color: #92c9ce;
+    z-index: 1;
   }
 
 .activeB {
+    font-weight: bold;
+    height: 55px !important; 
+    display: flex;
+    align-items: center;
     background-color: White;
+    color: #660000 !important;
+    z-index: 1;
   }
   
 .banner{
     width: 100%;
+    z-index: -2;
 }
 .img-logo{
-    margin-left: 20px;
     border: 1px #1b8e99;
+    position: absolute;
+    top: -16px;
+    left: 16px;
+    z-index: 9999;
 }
+
+.virtual-store-divider {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.virtual-store-divider img {
+    margin-top: 16px;
+    width: 125px;
+    height: 77px;
+}
+
+.virtual-store-divider h1 {
+    position: relative;
+    display: block;
+    flex: 1;
+    border-bottom: 2px solid #660000;
+    color: #660000;
+    bottom: 20px;
+}
+
 .DroneCards{
     display: flex;
     flex-direction: row;
