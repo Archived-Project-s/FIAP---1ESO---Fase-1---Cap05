@@ -8,6 +8,7 @@
 .site-container {
     max-width: 980px;
     margin: 0 auto;
+    padding: 0 16px
 }
 
 .navbarA{
@@ -59,7 +60,7 @@
 }
   
 .activeA {
-    height: 55px !important; 
+    height: 60px !important; 
     display: flex;
     align-items: center;
     background-color: #92c9ce;
@@ -68,7 +69,7 @@
 
 .activeB {
     font-weight: bold;
-    height: 55px !important; 
+    height: 60px !important; 
     display: flex;
     align-items: center;
     background-color: White;
@@ -112,35 +113,125 @@
 .DroneCards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
+    overflow-x: auto;
 }
 .cardsServico{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .cardDroneA{
+    flex: 1;
     display: flex;
     flex-direction: column;
-    border: 1px #1b8e99;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border: 1px solid #1b8e99;
+    padding-top: 3px;
+}
+
+.cardDroneA > p:nth-child(1){
+    display: block;
+    width: calc(100% - 6px);
+    background: #92c9ce66;
+    color: #1b8e99;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cardDroneA > p:nth-child(3){
+    color: #1b8e99;
+    width: calc(100% - 32px);
+    font-size: 14px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .DescriptionDroneA{
     background-color: #1b8e99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.DescriptionDroneA button{
+    border-radius: 8px;
+    border: 0;
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.DescriptionDroneA button:hover{
+    filter: brightness(0.9);
+}
+
+.DescriptionDroneText {
+    display: flex;
+    flex-direction: column;
+    color: white
+}
+
+.DescriptionDroneText p {
+    font-size: 14px;
+}
+
+.DescriptionDroneText p:first-child {
+    font-size: 30px;
 }
 
 .cardDroneB{
+    flex: 1;
     display: flex;
     flex-direction: column;
-    border: 1px #660000;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border: 1px solid #660000;
+    padding-top: 3px;
+}
+
+.cardDroneB > p:nth-child(1){
+    display: block;
+    width: calc(100% - 6px);
+    background: #66000066;
+    color: #660000;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cardDroneB > p:nth-child(3){
+    color: #660000;
+    width: calc(100% - 32px);
+    font-size: 14px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .DescriptionDroneB{
     background-color: #660000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.DescriptionDroneB button{
+    border-radius: 8px;
+    border: 0;
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.DescriptionDroneB button:hover{
+    filter: brightness(0.9);
 }
 
 .footer{
