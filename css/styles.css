@@ -101,7 +101,7 @@
     height: 77px;
 }
 
-.virtual-store-divider h1 {
+.virtual-store-divider h2 {
     position: relative;
     display: block;
     flex: 1;
@@ -118,12 +118,7 @@
     margin-bottom: 20px;
     overflow-x: auto;
 }
-.cardsServico{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 .cardDroneA{
     flex: 1;
     display: flex;
@@ -234,14 +229,102 @@
     filter: brightness(0.9);
 }
 
-.footer{
-    height: 100px;
-    width: 100%;
-    background-color: #1b8e99;
+.service-divider h2 {
+    border-bottom: 2px solid #1c8e99;
+    color: #1c8e99;
 }
 
-.footer-down{
-    height: 20px;
+.cardsServico {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cardServicoA {
+    border: 2px solid #660000; 
+    border-bottom: 8px solid #660000;
+}
+
+.cardServicoA h3,
+.cardServicoA p {
+    padding: 8px;
+    color: #660000;
+    font-size: 17px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardServicoA p {
+    font-size: 13px;
+}
+
+.cardServicoB {
+    border: 2px solid #1c8e99; 
+    border-bottom: 8px solid #1c8e99;
+}
+
+.cardServicoB h3,
+.cardServicoB p {
+    padding: 8px;
+    color: #1b8e99;
+    font-size: 17px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardServicoB p {
+    font-size: 13px;
+}
+
+.threeDrones {
+    display: flex;
+    justify-content: space-between;
+}
+
+#thirdDrone {
+    padding-right: 150px;
+}
+
+.footer{
+    height: 96px;
+    width: 100%;
+    padding: 0 0 0 20px;
+    background-color: #1b8e99;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-logo {
+    width: 100px;
+    height:fit-content
+}
+
+.imgProfessor {
+    height: 180px;
+    margin-bottom: 25px;
+}
+
+.footer p,
+.footer-down p {
+    color: white;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer p {
+    padding-left: 50px;
+}
+
+.footer-down {
+    height: 26px;
     width: 100%;
     background-color: #660000;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer-down p {
+    padding-right: 70px;
 }
