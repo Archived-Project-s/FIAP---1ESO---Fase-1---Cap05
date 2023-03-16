@@ -21,6 +21,13 @@
     margin-top: 16px;
     position: relative;
 }
+
+.navbarA nav {
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
 .navbarB{
     display: flex;
     align-items: center;
@@ -30,7 +37,6 @@
 }
 
 .navbarA a {
-    float: left;
     padding: 12px;
     color: white;
     text-decoration: none;
@@ -38,6 +44,7 @@
     height: 45px;
     display: flex;
     align-items: center;
+    text-align: center;
   }
 
 .navbarB a {
@@ -51,7 +58,7 @@
     align-items: center;
   }
 
-.navbarA a:hover {
+.navbarA nav a:hover {
     background-color: black;
 }
 
@@ -243,6 +250,7 @@
 }
 
 .cardServicoA {
+    width: 300px;
     border: 2px solid #660000; 
     border-bottom: 8px solid #660000;
 }
@@ -259,7 +267,12 @@
     font-size: 13px;
 }
 
+.cardServicoA img {
+    width: 100%;
+}
+
 .cardServicoB {
+    width: 300px;
     border: 2px solid #1c8e99; 
     border-bottom: 8px solid #1c8e99;
 }
@@ -274,6 +287,10 @@
 
 .cardServicoB p {
     font-size: 13px;
+}
+
+.cardServicoB img {
+    width: 100%;
 }
 
 .threeDrones {
